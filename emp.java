@@ -36,7 +36,7 @@ for(int i=0;i<n;i++)
 {
 if(emps[i].eNo==s)
 {
-System.out.println("eNo is: "+emps[i].eNo+ "eName: "+emps[i].eName+ "eSalary: "+emps[i].eSalary);
+System.out.println("eNo is: " +emps[i].eNo + "eName: " +emps[i].eName + "eSalary: " +emps[i].eSalary);
 }
 }
 }
