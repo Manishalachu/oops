@@ -34,7 +34,7 @@ class teacher extends employee
 String subject;
 String department;
 int teacherid;
-teacher(String name,String gender,String address,int age,int empid,String companyname,String qualification,int salary,String 					subject,String department,int teacherid)
+teacher(String name,String gender,String address,int age,int empid,String companyname,String qualification,int salary,String subject,String department,int teacherid)
 {
 super(name,gender,address,age,empid,companyname,qualification,salary);
 this.subject=subject;
