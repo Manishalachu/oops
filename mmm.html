@@ -1,0 +1,26 @@
+import {useState} from "react";
+function App(){
+    const [task,setTask] = useState("");
+    const [tasks,setTasks]=useState([]);
+    const addTask=()=>{
+        if(task==="") return;
+        setTasks([...tasks,task]);
+        setTask("");
+    }
+    return(
+        <>
+        <input value={task}
+        onChange={(e)=>setTask(e.target.value)}/>
+        <button
+        onClick={addTask}>
+            Add
+            </button>
+        {
+            tasks.map((item,index)=>
+            <p key={index}>{item}</p> 
+        )
+        }
+        </>
+    )
+}
+export default App
